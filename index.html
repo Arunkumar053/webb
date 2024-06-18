@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Website</title>
+    <link rel="stylesheet" href="styleind.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="https://cdn.vectorstock.com/i/1000v/44/54/js-logo-monogram-emblem-style-with-crown-shape-vector-31864454.jpg" alt="Company Logo" class="logo">
+        </div>
+        <h1>ONE FOR ALL ACADEMY</h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+          </ul>
+        </nav>
+      </header>
+      
+    <main>
+        <section>
+            <h2>About Us</h2>
+            <p>Welcome to our company website. We offer a range of free learning services to meet your needs.</p>
+        </section>
+
+        <section>
+            <h2>Free Learning Services</h2>
+            <p>Explore our free learning services below. Click on the links to access the resources.</p>
+            <ul>
+                <li><a href="https://www.khanacademy.org/" target="_blank">Khan Academy</a> - Free online courses, lessons, and practice.</li>
+                <li><a href="https://www.coursera.org/" target="_blank">Coursera</a> - Access free courses from top universities and companies.</li>
+                <li><a href="https://www.edx.org/" target="_blank">edX</a> - Free online courses from Harvard, MIT, and more.</li>
+                <li><a href="https://www.udacity.com/" target="_blank">Udacity</a> - Free courses and nanodegree programs in various fields.</li>
+                <li><a href="https://www.codecademy.com/" target="_blank">Codecademy</a> - Learn to code for free with interactive lessons.</li>
+            </ul>        </section>
+    </main>
+    <script>
+        // Dynamically load header
+        fetch('includes/header.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('headerContainer').innerHTML = data;
+          });
+
+        // Dynamically load footer
+        fetch('includes/footer.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('footerContainer').innerHTML = data;
+          });
+    </script>
+    <footer>
+        <p>&copy; 2024 ONE FOR ALL ACADEMY. All rights reserved.</p>
+    </footer>      
+</body>
+</html>

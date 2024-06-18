@@ -1,0 +1,105 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basic styling for body */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+/* Container styling */
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header inside the container */
+.container header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Input box styling */
+.input-box {
+  margin-bottom: 15px;
+}
+
+.input-box label {
+  font-weight: bold;
+}
+
+.input-box input[type="text"],
+.input-box input[type="email"],
+.input-box input[type="tel"],
+.input-box input[type="date"],
+.input-box input[type="number"],
+.input-box select {
+  width: calc(100% - 10px);
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.input-box input[type="number"] {
+  width: calc(50% - 5px);
+}
+
+/* Gender box and options */
+.gender-box {
+  margin-bottom: 15px;
+}
+
+.gender-option {
+  display: flex;
+  gap: 10px;
+}
+
+/* Submit button */
+button {
+  background-color: gray; /* Green background */
+  color: white; /* White text */
+  padding: 12px 20px; /* Padding */
+  border: none; /* No border */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+button:hover {
+  background-color: black; /* Darker green on hover */
+}
+
+/* Adjustments for the form container */
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Center align text within the button */
+button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+/* Footer */
+footer {
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+}
+
